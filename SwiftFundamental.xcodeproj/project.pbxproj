@@ -292,6 +292,7 @@
 				DEVELOPMENT_TEAM = 3S7V99Z6WT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftFundamental/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Fundamental";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +321,7 @@
 				DEVELOPMENT_TEAM = 3S7V99Z6WT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftFundamental/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Fundamental";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
