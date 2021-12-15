@@ -1,0 +1,6 @@
+framework module Pods_SwiftFundamental {
+  umbrella header "Pods-SwiftFundamental-umbrella.h"
+
+  export *
+  module * { export * }
+}
