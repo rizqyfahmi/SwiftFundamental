@@ -8,4 +8,5 @@ target 'SwiftFundamental' do
     # Pods for SwiftFundamental
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'RealmSwift'
 end
