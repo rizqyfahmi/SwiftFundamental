@@ -6,17 +6,24 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Movie: Codable, Identifiable {
-    let id: Int
-    let originalTitle: String
-    let originalLanguage: String
-    let overview: String
-    let popularity: Double
-    let posterPath: String
-    let releaseDate: String
-    let title: String
-    let video: Bool
-    let voteAverage: Double
-    let voteCount: Int
+class Movie: Object, Codable, Identifiable {
+    
+    @objc dynamic var id: Int = 0
+    @objc dynamic var originalTitle: String = ""
+    @objc dynamic var originalLanguage: String = ""
+    @objc dynamic var overview: String = ""
+    @objc dynamic var popularity: Double = 0.0
+    @objc dynamic var posterPath: String = ""
+    @objc dynamic var releaseDate: String = ""
+    @objc dynamic var title: String = ""
+    @objc dynamic var video: Bool = false
+    @objc dynamic var voteAverage: Double = 0.0
+    @objc dynamic var voteCount: Int = 0
+    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
+    
 }

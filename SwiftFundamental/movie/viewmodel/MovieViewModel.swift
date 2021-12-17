@@ -18,7 +18,9 @@ class MovieViewModel {
     }
     
     func getPopularMovies() -> Disposable {
+        print("getPopularMovies: \(Thread.current.description)")
         return repository.getPopularMovies().subscribe(onSuccess: { [weak self] movies in
+            print("subscribe getPopularMovies: \(Thread.current.description)")
             self?.movies.onNext(movies)
         }, onFailure: { [weak self] _ in
             self?.movies.onNext([])
@@ -26,3 +28,4 @@ class MovieViewModel {
     }
     
 }
+

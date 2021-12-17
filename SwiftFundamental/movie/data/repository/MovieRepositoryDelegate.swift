@@ -10,6 +10,7 @@ import RxSwift
 
 protocol MovieRepositoryDelegate {
     
+    func setPopularMovies(movies: [Movie])
     func getPopularMovies() -> Single<[Movie]>
     
 }

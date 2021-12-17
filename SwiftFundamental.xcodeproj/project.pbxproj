@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E08ADDA276D38B200E624A0 /* MovieDatabaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08ADD9276D38B200E624A0 /* MovieDatabaseDelegate.swift */; };
+		8E08ADDC276D38CF00E624A0 /* MovieDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08ADDB276D38CF00E624A0 /* MovieDatabase.swift */; };
 		8ED9DECE27698A5B0033EC8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9DECD27698A5B0033EC8F /* AppDelegate.swift */; };
 		8ED9DED027698A5B0033EC8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9DECF27698A5B0033EC8F /* SceneDelegate.swift */; };
 		8ED9DED227698A5B0033EC8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9DED127698A5B0033EC8F /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 		2018DE62BDEA53CD7E6E9B59 /* Pods_SwiftFundamental.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFundamental.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8EA5A921F29D5E16EB13BB /* Pods-SwiftFundamental.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFundamental.release.xcconfig"; path = "Target Support Files/Pods-SwiftFundamental/Pods-SwiftFundamental.release.xcconfig"; sourceTree = "<group>"; };
 		49B0A2955D504BC88972F865 /* Pods-SwiftFundamental.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFundamental.debug.xcconfig"; path = "Target Support Files/Pods-SwiftFundamental/Pods-SwiftFundamental.debug.xcconfig"; sourceTree = "<group>"; };
+		8E08ADD9276D38B200E624A0 /* MovieDatabaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieDatabaseDelegate.swift; path = SwiftFundamental/movie/data/local/MovieDatabaseDelegate.swift; sourceTree = SOURCE_ROOT; };
+		8E08ADDB276D38CF00E624A0 /* MovieDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieDatabase.swift; path = SwiftFundamental/movie/data/local/MovieDatabase.swift; sourceTree = SOURCE_ROOT; };
 		8ED9DECA27698A5B0033EC8F /* SwiftFundamental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFundamental.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED9DECD27698A5B0033EC8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ED9DECF27698A5B0033EC8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,15 @@
 				2B8EA5A921F29D5E16EB13BB /* Pods-SwiftFundamental.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E08ADDD276D397E00E624A0 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				8E08ADD9276D38B200E624A0 /* MovieDatabaseDelegate.swift */,
+				8E08ADDB276D38CF00E624A0 /* MovieDatabase.swift */,
+			);
+			path = local;
 			sourceTree = "<group>";
 		};
 		8ED9DEC127698A5B0033EC8F = {
@@ -128,7 +141,7 @@
 		8ED9DEE627699C460033EC8F /* data */ = {
 			isa = PBXGroup;
 			children = (
-				8ED9DEEB27699E660033EC8F /* local */,
+				8E08ADDD276D397E00E624A0 /* local */,
 				8ED9DEEA27699E560033EC8F /* remote */,
 				8ED9DEE927699E450033EC8F /* model */,
 				8ED9DEE827699E350033EC8F /* repository */,
@@ -169,13 +182,6 @@
 				8ED9DEF62769A1000033EC8F /* MovieService.swift */,
 			);
 			path = remote;
-			sourceTree = "<group>";
-		};
-		8ED9DEEB27699E660033EC8F /* local */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = local;
 			sourceTree = "<group>";
 		};
 		EEBE3B296838059293A077B9 /* Frameworks */ = {
@@ -304,6 +310,7 @@
 				8ED9DED227698A5B0033EC8F /* ViewController.swift in Sources */,
 				8ED9DEF92769A4D20033EC8F /* MovieViewModel.swift in Sources */,
 				8ED9DEF52769A0D00033EC8F /* MovieServiceDelegate.swift in Sources */,
+				8E08ADDC276D38CF00E624A0 /* MovieDatabase.swift in Sources */,
 				8ED9DEEF27699FC70033EC8F /* MovieResponse.swift in Sources */,
 				8ED9DECE27698A5B0033EC8F /* AppDelegate.swift in Sources */,
 				8ED9DEED27699FB10033EC8F /* Movie.swift in Sources */,
@@ -311,6 +318,7 @@
 				8ED9DEF72769A1000033EC8F /* MovieService.swift in Sources */,
 				8ED9DED027698A5B0033EC8F /* SceneDelegate.swift in Sources */,
 				8ED9DEF12769A0190033EC8F /* MovieRepositoryDelegate.swift in Sources */,
+				8E08ADDA276D38B200E624A0 /* MovieDatabaseDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

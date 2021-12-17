@@ -15,6 +15,7 @@ class MovieService: MovieServiceDelegate {
     static let baseURL = "https://api.themoviedb.org/3/movie"
     
     func getPopularMovies() -> Single<[Movie]> {
+        print("Remote getPopularMovies: \(Thread.current.description)")
         return Single.create { single in
             
             var components = URLComponents(string: "\(MovieService.baseURL)/popular")!
@@ -38,7 +39,7 @@ class MovieService: MovieServiceDelegate {
                     let decoder = JSONDecoder()
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                     
-                    let response: Response = try decoder.decode(Response.self, from: data!)
+                    let response: MovieResponse = try decoder.decode(MovieResponse.self, from: data!)
                     single(.success(response.results))
                 } catch {
                     return single(.failure(error))

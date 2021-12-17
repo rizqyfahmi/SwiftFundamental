@@ -10,7 +10,11 @@ import RxSwift
 
 class ViewController: UIViewController {
     
-    private let movieViewModel = MovieViewModel(repository: MovieRepository(remote: MovieService()))
+    private let movieViewModel = MovieViewModel(
+        repository: MovieRepository(
+            remote: MovieService(), local: MovieDatabase()
+        )
+    )
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -21,9 +25,11 @@ class ViewController: UIViewController {
         movieViewModel.movies
             .asObserver()
             .subscribe(onNext: { items in
-                print(items)
+//                print(items)
             })
             .disposed(by: disposeBag)
+        
+        
         
     }
 }
